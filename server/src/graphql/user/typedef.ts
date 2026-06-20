@@ -1,1 +1,9 @@
-export const typeDefs =``
+export const typeDefs =`
+ type User {
+ id:String!  
+ firstName:String!
+ lastName:String
+ email:String!  
+ profileImageURL:String
+ }
+`

@@ -9,9 +9,9 @@ datasource db {
 model User {
   id              String  @id @default(uuid())
   firstName       String  @map("first_name")
-  lastName        String  @map("last_name")
+  lastName        String?  @map("last_name")
   email           String  @unique
-  passward        String
+  password        String
   salt            String
   profileImageURL String? @map("profile_image_url")
 
